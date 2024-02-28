@@ -3,7 +3,7 @@ import './movie-add-form.css'
 import { Context } from '../context/index';
 
 const MovieAddForm = ({addForm})=>{
-  const [stat, setStat] = useState({name: '+998 90', viewers: ''})
+  const [stat, setStat] = useState({name: '', viewers: ''})
 
   const {_, dispatch} = useContext(Context)
 
@@ -32,7 +32,7 @@ const MovieAddForm = ({addForm})=>{
           <input 
             type='number' 
             className='form-control new-post-label' 
-            placeholder="Necha marotaba ko'rilgan?" 
+            placeholder="How many times has it been viewed?" 
             name='viewers'
             value={stat.viewers}
             onChange={changeHandlerInput}
