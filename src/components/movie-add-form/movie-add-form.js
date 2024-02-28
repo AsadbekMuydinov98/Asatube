@@ -24,7 +24,7 @@ const MovieAddForm = ({addForm})=>{
           <input 
             type='text' 
             className='form-control new-post-label' 
-            placeholder='Qanday kino?'
+            placeholder='What kind of movie?'
             name='name'
             value={stat.name}
             onChange={changeHandlerInput} 
